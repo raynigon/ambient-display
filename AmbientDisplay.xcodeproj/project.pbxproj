@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		2656799C24FA63A400F5464C /* AmbientDisplay */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AmbientDisplay; sourceTree = BUILT_PRODUCTS_DIR; };
 		2656799F24FA63A400F5464C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2684536324FBB93700D3F44D /* AmbientDisplay.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmbientDisplay.profdata; sourceTree = "<group>"; };
 		268FBF1724FA7EAC00F4D1CC /* recorder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recorder.cpp; sourceTree = "<group>"; };
 		268FBF1824FA7EAC00F4D1CC /* recorder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = recorder.hpp; sourceTree = "<group>"; };
 		268FBF1A24FA7EB900F4D1CC /* transmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transmitter.cpp; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 				2656799E24FA63A400F5464C /* AmbientDisplay */,
 				2656799D24FA63A400F5464C /* Products */,
 				268FBF2B24FA864B00F4D1CC /* Frameworks */,
+				2684536224FBB93700D3F44D /* OptimizationProfiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +95,14 @@
 				2656799F24FA63A400F5464C /* main.cpp */,
 			);
 			path = AmbientDisplay;
+			sourceTree = "<group>";
+		};
+		2684536224FBB93700D3F44D /* OptimizationProfiles */ = {
+			isa = PBXGroup;
+			children = (
+				2684536324FBB93700D3F44D /* AmbientDisplay.profdata */,
+			);
+			path = OptimizationProfiles;
 			sourceTree = "<group>";
 		};
 		268FBF1424FA7E7100F4D1CC /* record */ = {
@@ -187,7 +197,7 @@
 				};
 			};
 			buildConfigurationList = 2656799724FA63A400F5464C /* Build configuration list for PBXProject "AmbientDisplay" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -318,6 +328,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -334,6 +345,7 @@
 		265679A424FA63A400F5464C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Q96A3P88L;
@@ -345,6 +357,7 @@
 		265679A524FA63A400F5464C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Q96A3P88L;
